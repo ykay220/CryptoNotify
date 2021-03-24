@@ -15,14 +15,14 @@ axios.get('http://rest.coinapi.io/v1/assets?apikey=F672C1C8-83F6-44FB-9E86-0A84A
 
 // let num = 57289.086361961905;
 // alert(num.toFixed(2))
-
-
-for (let el of langObject) {
-    const langOption = document.createElement('option');
-    langOption.textContent = el.name;
-    langOption.value = el.code;
-    select.append(langOption)
+const addOptions = (array) => {
+    array.forEach(element => {
+        const option = document.createElement('option')
+        option.textContent = `${element.asset_id}`
+        select.append(option)
+    });
 }
+
 
 
 const addPrice = (array) => {
