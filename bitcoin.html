@@ -14,7 +14,7 @@
   <body>
     <div id="first-div">
       <h1>CryptoNotify</h1>
-      <section class="first-section">
+      <div class="first-section">
         <form id="form1">
           <label for="email-input">Email me at</label>
           <input type="email" id="email-input" placeholder="enter email" />
@@ -31,20 +31,20 @@
           <label for="amount-input"></label>
           <input type="text" id="amount-input" placeholder="$" />
           <button>Submit</button>
-
-          <div class="container">
-            <section class="current-prices">
-              <p id="price1"></p>
-            </section>
-            <section class="current-prices">
-              <p id="price2"></p>
-            </section>
-            <section class="current-prices">
-              <p id="price3"></p>
-            </section>
-          </div>
         </form>
-      </section>
+      </div>
+
+      <div class="second-section">
+        <section class="current-prices">
+          <p id="price1"></p>
+        </section>
+        <section class="current-prices">
+          <p id="price2"></p>
+        </section>
+        <section class="current-prices">
+          <p id="price3"></p>
+        </section>
+      </div>
     </div>
     <script src="code.js"></script>
   </body>
